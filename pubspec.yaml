@@ -1,7 +1,6 @@
 name: lughafy
-description: Kenya's 68-language translator. Built by saytekaren x Grok.
+description: Kenya's 68-language AI translator. Offline. Real-time. Built by saytekaren.
 
-publish_to: 'none'  # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
@@ -13,14 +12,11 @@ dependencies:
     sdk: flutter
   speech_to_text: ^6.6.1
   flutter_tts: ^3.8.5
+  google_ml_kit: ^0.16.0
+  onnxruntime: ^0.2.1
   cupertino_icons: ^1.0.8
-
-dev_dependencies:
-  flutter_test:
-    sdk: flutter
-  flutter_lints: ^3.0.0
 
 flutter:
   uses-material-design: true
   assets:
-    - assets/
+    - assets/models/
